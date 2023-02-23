@@ -3,6 +3,16 @@
 {% block title %} View Page{% endblock title%}
 
 {% block content %}
-<h1>View Page</h1>
+<table border=1>
+    {% for data in db %}
+    <tr>
+        <td>{{data.username}}</td>
+        <td>{{data.email}}</td>
+        <td>{{data.siteurl}}</td>
+        <td>{{data.password}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
 
 {% endblock content %}

@@ -40,8 +40,8 @@ def generator():
         random.shuffle(temp_pass_list)
     
     password = ""
-    for x in temp_pass_list:
-            password = password + x
+    for x in temp_pass_list:  #type: ignore
+          password = password + x
             
     # print out password
     return password
