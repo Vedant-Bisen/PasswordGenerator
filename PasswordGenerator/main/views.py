@@ -2,7 +2,6 @@ from django.shortcuts import render
 from .models import Passwords
 from .forms import CreateNew
 from .generatorFile import generator
-from django.template import loader
 
 # Create your views here.
 
