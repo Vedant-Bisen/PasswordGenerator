@@ -3,16 +3,23 @@
 {% block title %} View Page{% endblock title%}
 
 {% block content %}
-<table border=1>
-    {% for data in db %}
-    <tr>
-        <td>{{data.username}}</td>
-        <td>{{data.email}}</td>
-        <td>{{data.siteurl}}</td>
-        <td>{{data.password}}</td>
-    </tr>
-    {% endfor %}
-</table>
-
-
+<div class="container">
+    <h2>View Page</h2>
+    <ul class="responsive-table">
+        <li class="table-header">
+          <div class="col col-1">Username</div>
+          <div class="col col-2">Email ID</div>
+          <div class="col col-3">Site URL</div>
+          <div class="col col-4">Password</div>
+        </li>
+        {% for data in db%}
+        <li class="table-row">
+            <div class="col col-1" data-label="Username">{{data.username}}</div>
+            <div class="col col-2" data-label="Email ID">{{data.email}}</div>
+            <div class="col col-3" data-label="Site URL">{{data.siteurl}}</div>
+            <div class="col col-4" data-label="Password">{{data.password}}</div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock content %}
