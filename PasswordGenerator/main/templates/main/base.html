@@ -3,6 +3,17 @@
     <style type="text/css">
       body {
         font-family: "lato", sans-serif;
+        align-items: center;
+        background-color: #001;
+        justify-content: center;
+        height: 100vh;
+      }
+      .form-group {
+        align-items: center;
+        background-color: #001;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
       }
       .container {
         max-width: 1000px;
@@ -70,7 +81,6 @@
           text-align: right;
         }
       }
-
       .unstyled {
         list-style: none;
         padding: 0;
@@ -160,10 +170,12 @@
       .list-hover-slide a:hover:before {
         left: 0;
       }
+
+
+      
     </style>
     <title>{% block title %}Home Page{% endblock title %}</title>
   </head>
-
   <body>
     <header class="header" role="banner">
       <h1 class="logo">
