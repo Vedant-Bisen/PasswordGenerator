@@ -1,0 +1,12 @@
+{% extends 'main/base.html' %}
+
+{% block title %}New Page {% endblock title%}
+
+{% block content %}
+    <h1>New Page</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit", name="save">Create</button>
+    </form>
+{% endblock content %}
