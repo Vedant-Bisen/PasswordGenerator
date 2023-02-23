@@ -8,8 +8,37 @@ class CreateNew(forms.ModelForm):
         fields = ["username", "email", "siteurl", "password"]
 
         widgets = {
-            "username": forms.TextInput(attrs={"placeholder": "Username","class": "form-control"}),
-            "email": forms.EmailInput(attrs={"placeholder": "Email ID","class": "form-control"}),
-            "siteurl": forms.URLInput(attrs={"placeholder": "Site URL","class": "form-control"}),
-            "password": forms.TextInput(attrs={"placeholder": "Password","class": "form-control"}),
+            "username": forms.TextInput(
+                attrs={
+                    "placeholder": "Username",
+                    "style": "width:300px",
+                    "class": "form-control",
+                }
+                
+            ),
+            "email": forms.EmailInput(
+                attrs={
+                    "placeholder": "Email ID",
+                    "style": "width:300px",
+                    "class": "form-control",
+                }
+                
+            ),
+            "siteurl": forms.URLInput(
+                attrs={
+                    "placeholder": "Site URL",
+                    "style": "width:300px",
+                    "class": "form-control",
+                }
+                
+            ),
+            "password": forms.TextInput(
+                attrs={
+                    "placeholder": "Password",
+                    "style": "width:300px",
+                    "class": "form-control",
+                    
+                }
+                
+            ),
         }
