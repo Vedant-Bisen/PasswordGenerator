@@ -11,34 +11,34 @@ class CreateNew(forms.ModelForm):
             "username": forms.TextInput(
                 attrs={
                     "placeholder": "Username",
-                    "style": "width:300px",
+                    # "style": "width:500px",
+                    "style": "height:30px",
                     "class": "form-control",
                 }
-                
             ),
             "email": forms.EmailInput(
                 attrs={
                     "placeholder": "Email ID",
-                    "style": "width:300px",
+                    # "style": "width:500px",
+                    "style": "height:30px",
                     "class": "form-control",
                 }
-                
             ),
             "siteurl": forms.URLInput(
                 attrs={
                     "placeholder": "Site URL",
-                    "style": "width:300px",
+                    # "style": "width:500px",
+                    "style": "height:30px",
                     "class": "form-control",
                 }
-                
             ),
             "password": forms.TextInput(
                 attrs={
                     "placeholder": "Password",
-                    "style": "width:300px",
+                    # "style": "width:500px",
+                    "style": "height:30px",
                     "class": "form-control",
-                    
+                    "required": "Flase",
                 }
-                
-            ),
+            )
         }
